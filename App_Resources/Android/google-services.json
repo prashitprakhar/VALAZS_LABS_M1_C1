@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "257195669641",
+    "firebase_url": "https://valazs-labs-m1-c1.firebaseio.com",
+    "project_id": "valazs-labs-m1-c1",
+    "storage_bucket": "valazs-labs-m1-c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257195669641:android:509bb04fc19576ff",
+        "android_client_info": {
+          "package_name": "org.nativescript.youthiafoundation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257195669641-tatnim7qff714qpfl33146lp8n1hqhpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXMEWgM-xMFANJN_qDd-ealw7C0eVJbuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257195669641-tatnim7qff714qpfl33146lp8n1hqhpb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<ns-action-bar title="Notifications" [showToggleBar]="false"></ns-action-bar><!-- [showBackButton]="false" -->
+<FlexboxLayout justifyContent="center" alignItems="center" *ngIf="!isLoading">
+    <StackLayout *ngIf="!currentMessage">
+        <Label text="No Notifications found !"></Label>
+    </StackLayout>
+<StackLayout *ngIf="currentMessage">
+    <!-- <Label
+    text="Hello there.. You are on notifications page.">
+    </Label> -->
+    <Label
+    *ngFor="let message of currentMessage; let i = index"
+    [text]="message.message"
+    >
+    </Label>
+</StackLayout>
+</FlexboxLayout>
+<FlexboxLayout *ngIf="isLoading" justifyContent="center" alignItems="center">
+    <ActivityIndicator [busy]="isLoading"></ActivityIndicator>
+</FlexboxLayout>

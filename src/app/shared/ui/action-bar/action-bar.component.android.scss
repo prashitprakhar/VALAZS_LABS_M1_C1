@@ -1,0 +1,11 @@
+// @import '~nativescript-theme-core/scss/index';
+// @import '~nativescript-theme-core/scss/platforms/index.android';
+@import './../../../../themes/colors';
+
+.action_bar_style{
+    background: linear-gradient(140deg, #FF8008, #FFC837);
+}
+
+.back_button_text_style {
+    color: $secondary;
+}

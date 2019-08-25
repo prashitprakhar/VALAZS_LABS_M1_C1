@@ -1,0 +1,123 @@
+// @import '~nativescript-theme-core/css/core.light.css';
+// @import '~nativescript-theme-core/scss/light';
+@import '~nativescript-theme-core/scss/dark';
+@import './themes/colors';
+
+$btn-color: $primary;
+
+@import '~nativescript-theme-core/scss/index';
+
+ActionBar {
+    background: linear-gradient(140deg, #FF8008, #FFC837);
+    background: $primary;
+    color: $secondary;
+}
+
+.drawer-container {
+    background: linear-gradient(140deg, #FF8008, #FFC837);
+    /* width: 80%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20; */
+}
+
+.btn {
+    background-color: $primary;
+    color: $secondary;
+    border-radius: 30%;
+    border-color: $secondary;
+    border-width: 2;
+    margin-left: 60;
+    margin-right: 60;
+    width: 80%;
+}
+
+.form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .input-field {
+        width: 80%;
+
+        .input {
+            border-bottom-width: 2;
+            border-color: $primary;
+            width: 100%;
+            color: #000000;
+        }
+
+        .input.ng-invalid.ng-touched {
+            border-bottom-width: 2;
+            width: 100%;
+            border-bottom-color: red;
+            color: red;
+        }
+
+        .label {
+            color: $primary;
+            font-weight: bold;
+            font-family: 'Oswald', 'Oswald-Bold', 'Oswald-Regular'
+        }
+        .label.invalid {
+            color: red;
+        }
+    }
+}
+
+.fa {
+    font-family: 'FontAwesome', 'Font-Awesome'
+}
+
+.btn-flat{
+    background: transparent;
+    border-color: transparent;
+    border-width: 1;
+    color: $primary;
+}
+
+.updates-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .input-field {
+        width: 80%;
+
+        .input {
+            border-bottom-width: 2;
+            border-color: $primary;
+            width: 80%;
+            color: #000000;
+            font-size: 20;
+        }
+
+        .input.ng-invalid.ng-touched {
+            border-bottom-width: 2;
+            width: 100%;
+            border-bottom-color: red;
+            color: red;
+        }
+
+        .label {
+            color: $primary;
+            font-weight: bold;
+            font-family: 'Oswald', 'Oswald-Bold', 'Oswald-Regular'
+        }
+        .label.invalid {
+            color: red;
+        }
+    }
+
+}
+
+
+// .invalid {
+//     color: red;
+// }
+
+// .ng-invalid.ng-touched {
+//     border-bottom-color: red;
+//     color: red;
+// }

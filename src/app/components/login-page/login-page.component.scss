@@ -1,0 +1,44 @@
+/* Add mobile styles for the component here.  */
+@import './../../../themes/colors';
+@import './../../../app.common';
+
+.login_btn_specific_style {
+    // background-color: #FFFFFF;
+    // color: #1414f8;
+    border-radius: 5%;
+    border-color: darken($primary, 20);
+    border-width: 2;
+    margin-left: 60;
+    margin-right: 60;
+    margin-top: 40;
+    width: 80%;
+}
+
+// .login_details_container {
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+// .mobile_number_text_style {
+//     /* width: 100; */
+//     margin-left: 60;
+//     margin-right: 60;
+//     border-radius: 10%;
+//     border-width: 2;
+//     border-color: #3f3f3f;
+//     margin-bottom: 5;
+// }
+
+// .login_password_text_style {
+//     /* width: 100; */
+//     margin-left: 60;
+//     margin-right: 60;
+//     border-radius: 10%;
+//     border-width: 2;
+//     border-color: #3f3f3f;
+//     margin-bottom: 15;
+// }
+
+
+
+

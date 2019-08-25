@@ -1,0 +1,15 @@
+// @import '~nativescript-theme-core/scss/index';
+// @import '~nativescript-theme-core/scss/platforms/index.ios';
+@import './../../../../themes/colors';
+
+.action_bar_style{
+    background-color: $primary;
+}
+
+.menu_option_text {
+    color: $secondary
+}
+
+.back_button_text_style {
+    background-color: #000000;
+}

@@ -1,0 +1,26 @@
+<!-- <Page xmlns="http://schemas.nativescript.org/tns.xsd"> -->
+<ActionBar
+  [title]="title"
+  [showToggleBar]="showToggleBar"
+  (loaded)="onLoadedActionBar()"
+  class="action_bar_style"
+>
+  <NavigationButton
+    text="Home"
+    android.systemIcon="ic_menu_back"
+    *ngIf="canGoBack"
+    (tap)="onGoBack()"
+  >
+  </NavigationButton>
+  <NavigationButton
+    *ngIf="android && showToggleBar"
+    icon="res://icons_menu_90"
+    (tap)="onToggleMenu()"
+  ></NavigationButton
+  ><!-- This is only for android-->
+  <ActionItem *ngIf="!android && showToggleBar" ios.position="left" (tap)="onToggleMenu()">
+    <!-- <Label text="Menu" class="menu_option_text"></Label> -->
+    <Label text="&#xf0c9;" class="fa m-5 menu_option_text"></Label>
+  </ActionItem>
+</ActionBar>
+<!-- </Page> -->

@@ -1,0 +1,19 @@
+<ns-action-bar title="Youthia Foundation" [showBackButton]="false" [showToggleBar]="true"></ns-action-bar>
+<StackLayout>
+    <Label
+    text="Welcome User !!"
+    ></Label>
+    <Label
+    text="We are glad you are here."
+    ></Label>
+    <Button text="See Notifications"
+    (tap)="navigateToNotificationPage()"
+    class="btn"
+    >
+    <!-- class="notification_btn_navigate" -->
+
+</Button>
+<Button text="Post Updates"
+    (tap)="postUpdates()"
+    class="btn"></Button>
+</StackLayout>
