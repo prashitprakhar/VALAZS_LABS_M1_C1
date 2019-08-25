@@ -13,18 +13,13 @@ export class LoginPageComponent implements OnInit {
     mobnumPattern = "^((\\+91-?)|0)?[0-9]{10}$";
 
     public usernameControlIsValid: boolean = true;
-    public passwordControlIsValid: boolean = true;
 
     public mobileNumber: string = "";
-    public password: string = "";
 
     public mobileNumberPattern = "/[0-9+- ]/";
 
     public isLogin: boolean = true;
 
-    @ViewChild("passwordEl", { static: false }) passwordEl: ElementRef<
-        TextField
-    >;
     @ViewChild("usernameEl", { static: false }) usernameEl: ElementRef<
         TextField
     >;
@@ -39,26 +34,17 @@ export class LoginPageComponent implements OnInit {
                     Validators.required,
                     Validators.pattern(this.mobnumPattern)
                 ]
-            }),
-            password: new FormControl(null, {
-                updateOn: "change",
-                validators: [Validators.required, Validators.minLength(6)]
             })
         });
 
         this.loginForm.get("username").statusChanges.subscribe(status => {
             this.usernameControlIsValid = status === "VALID";
         });
-
-        this.loginForm.get("password").statusChanges.subscribe(status => {
-            this.passwordControlIsValid = status === "VALID";
-        });
     }
 
     onSubmit() {
         this.usernameEl.nativeElement.focus();
-        this.passwordEl.nativeElement.focus();
-        this.passwordEl.nativeElement.dismissSoftInput();
+        this.usernameEl.nativeElement.dismissSoftInput();
 
 
         if(!this.loginForm.valid) {
@@ -66,10 +52,9 @@ export class LoginPageComponent implements OnInit {
         }
 
         const username = this.loginForm.get("username").value;
-        const password = this.loginForm.get("password").value;
+
         this.loginForm.reset();
         this.usernameControlIsValid = true;
-        this.passwordControlIsValid = true;
         if(this.isLogin){
             console.log("Logging in...")
         }

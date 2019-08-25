@@ -21,23 +21,6 @@
     ></Label>
   </StackLayout>
 
-  <!-- <StackLayout class="input-field">
-    <Label class="label" text="Password"></Label>
-    <TextField
-      class="input"
-      returnKeyType="Done"
-      [autocorrect]="false"
-      [autocapitalization]="false"
-      [secure]="true"
-      hint="Min. 6 characters"
-      formControlName="password"
-      #passwordEl
-    ></TextField>
-    <Label *ngIf="!passwordControlIsValid" text="Please enter Password"></Label>
-  </StackLayout> -->
-
-  <!-- <Button class="btn btn-flat" [text]="isLogin ? 'Sign Up' : 'Login'" (tap)="onSwitch()"></Button> -->
-
   <Button
     class="btn login_btn_specific_style"
     (tap)="onSubmit()"
@@ -45,56 +28,3 @@
     [isEnabled]="loginForm.valid"
   ></Button>
 </FlexboxLayout>
-<!-- Non Reactive form approach -->
-<!-- <FlexboxLayout class="form">
-  <StackLayout class="input-field">
-    <Label
-      class="label"
-      text="Mobile Number"
-      [ngClass]="{ invalid: !usernameCtrl.valid && usernameCtrl.touched }"
-    ></Label>
-    <TextField
-      class="input"
-      returnKeyType="next"
-      required
-      ngModel
-      #usernameCtrl="ngModel"
-      [autocorrect]="false"
-      [autocapitalization]="false"
-    ></TextField>
-    <Label
-      *ngIf="!usernameCtrl.value && usernameCtrl.touched"
-      text="Please enter your Mobile Number"
-    ></Label>
-  </StackLayout>
-
-  <StackLayout class="input-field">
-    <Label
-      class="label"
-      text="Password"
-      [ngClass]="{ invalid: !passwordCtrl.valid && passwordCtrl.touched }"
-    ></Label>
-    <TextField
-      class="input"
-      returnKeyType="Done"
-      required
-      ngModel
-      #passwordCtrl="ngModel"
-      [autocorrect]="false"
-      [autocapitalization]="false"
-      [secure]="true"
-      hint="Min. 6 characters"
-    ></TextField>
-    <Label
-      *ngIf="!passwordCtrl.value && passwordCtrl.touched"
-      text="Please enter Password"
-    ></Label>
-  </StackLayout>
-
-  <Button
-    class="btn login_btn_specific_style"
-    (tap)="onSetChallenge(usernameCtrl.value, passwordCtrl.value)"
-    text="Login"
-    [isEnabled]="usernameCtrl.valid && passwordCtrl.valid"
-  ></Button>
-</FlexboxLayout> -->
